@@ -30,24 +30,26 @@ def square(num1):
 def cube(num1):
     """Return the cube of the input."""
 
-    return (square(num1))*num1
+    # return (square(num1))*num1
+    return num1 ** 3
 
 def power(num1, num2):
     """Raise num1 to the power of num2 and return the value."""
 
-    return num1**num2
+    return num1 ** num2
 
 def mod(num1, num2):
     """Return the remainder of num1 / num2."""
 
     return num1 % num2
 
-
-print add(1, 4)
-print subtract(1, 4)
-print multiply(1, 4)
-print divide(1, 4)
-print square(4)
-print cube(4)
-print power(1, 4)
-print mod(1, 4)
+if __name__ == "__main__":
+    print "Arithmetic test:"
+    print "\t", "+", 1, 4, "==", add(1, 4)
+    print subtract(1, 4)
+    print multiply(1, 4)
+    print divide(1, 4)
+    print square(4)
+    print cube(4)
+    print power(1, 4)
+    print mod(1, 4)
