@@ -43,6 +43,16 @@ def mod(num1, num2):
 
     return num1 % num2
 
+def add_mult(num1, num2, num3):
+    """Add first two and multiply sum with the third."""
+
+    return ((num1+num2)*num3)
+
+def add_cubes(num1, num2):
+    """Cube both numbers and add them"""
+
+    return (cube(num1) + cube(num2))
+
 if __name__ == "__main__":
     print "Arithmetic test:"
     print "\t", "+", 1, 4, "==", add(1, 4)
@@ -53,3 +63,5 @@ if __name__ == "__main__":
     print cube(4)
     print power(1, 4)
     print mod(1, 4)
+    print add_mult(1,4,5)
+    print add_cubes(2,3)
